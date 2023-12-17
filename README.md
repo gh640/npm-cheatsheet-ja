@@ -19,6 +19,10 @@
 <details>
 <summary>出力サンプル:</summary>
 
+```bash
+npm audit
+```
+
 ```text
 # npm audit report
 
