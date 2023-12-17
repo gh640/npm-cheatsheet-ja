@@ -42,7 +42,7 @@ npm audit signatures
 - `fix`: 脆弱性修正のためにパッケージ更新を試みる
 - `signatures`: ダウンロードされたパッケージのシグネチャをチェックする
 
-https://docs.npmjs.com/cli/v10/commands/npm-audit
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-audit)
 
 ### `npm ci` / `npm clean-install`
 
@@ -56,7 +56,7 @@ https://docs.npmjs.com/cli/v10/commands/npm-audit
 - `node_modules` がすでにある場合は先に削除してからパッケージのインストールを行う
 - `package.json` や `package-lock.json` への書き込みを行わない
 
-https://docs.npmjs.com/cli/v10/commands/npm-ci
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-ci)
 
 ### `npm completion`
 
@@ -72,7 +72,7 @@ npm completion >> ~/.bashrc
 npm completion >> ~/.zshrc
 ```
 
-https://docs.npmjs.com/cli/v10/commands/npm-completion
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-completion)
 
 ### `npm explain`
 
@@ -100,13 +100,13 @@ node_modules/wait-on/node_modules/axios
       dev start-server-and-test@"^2.0.0" from the root project
 ```
 
-https://docs.npmjs.com/cli/v10/commands/npm-explain
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-explain)
 
 ### `npm init`
 
 `package.json` ファイルを作成する。プロジェクトの新規作成用。
 
-https://docs.npmjs.com/cli/v10/commands/npm-init
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-init)
 
 ### `npm install` / `npm i`
 
@@ -114,7 +114,7 @@ https://docs.npmjs.com/cli/v10/commands/npm-init
 
 引数としてパッケージ名が渡されたときはそのパッケージをインストールする。パッケージ名が渡されなかったときは `package.json` `npm-shrinkwrap.json` `package-lock.json` などで指定されているパッケージをインストールする。
 
-https://docs.npmjs.com/cli/v10/commands/npm-install
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-install)
 
 ### `npm ls` / `npm list`
 
@@ -168,7 +168,7 @@ myproject@1.0.0 /path/to/the/project/dir
     └── axios@1.6.2
 ```
 
-https://docs.npmjs.com/cli/v10/commands/npm-ls
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-ls)
 
 ### `npm outdated`
 
@@ -186,7 +186,7 @@ npm outdated
 npm outdated --all
 ```
 
-https://docs.npmjs.com/cli/v10/commands/npm-outdated
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-outdated)
 
 ### `npm run-script` / `npm run`
 
@@ -212,7 +212,7 @@ npm run test -- --grep="pattern"
 npm run
 ```
 
-https://docs.npmjs.com/cli/v10/commands/npm-run-script
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-run-script)
 
 ### `npm start`
 
@@ -220,19 +220,19 @@ https://docs.npmjs.com/cli/v10/commands/npm-run-script
 
 `scripts.start` がない場合は `node server.js` が実行される。
 
-https://docs.npmjs.com/cli/v10/commands/npm-start
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-start)
 
 ### `npm stop`
 
 `package.json` の `scripts.stop` で指定されたスクリプトを実行する。
 
-https://docs.npmjs.com/cli/v10/commands/npm-stop
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-stop)
 
 ### `npm test`
 
 `package.json` の `scripts.test` で指定されたスクリプトを実行する。
 
-https://docs.npmjs.com/cli/v10/commands/npm-test
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-test)
 
 ### `npm uninstall` / `npm un` / `npm remove` / `npm rm`
 
@@ -240,13 +240,13 @@ https://docs.npmjs.com/cli/v10/commands/npm-test
 
 `package.json` や `npm-shrinkwrap.json` `package-lock.json` に記載された該当パッケージの情報も削除する。
 
-https://docs.npmjs.com/cli/v10/commands/npm-uninstall
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-uninstall)
 
 ### `npm update` `npm up`
 
 semver 制約を守りながらパッケージを更新する。
 
-https://docs.npmjs.com/cli/v10/commands/npm-update
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-update)
 
 ### `npm view`
 
@@ -286,13 +286,13 @@ latest: 1.6.2        next: 1.2.0-alpha.1
 published a month ago by jasonsaayman <jasonsaayman@gmail.com>
 ```
 
-https://docs.npmjs.com/cli/v10/commands/npm-view/
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-view/)
 
 ### `npm repo`
 
 パッケージリポジトリページをブラウザで開く。
 
-https://docs.npmjs.com/cli/v10/commands/npm-repo
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-repo)
 
 サンプル:
 
