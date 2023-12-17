@@ -16,7 +16,8 @@
 
 パッケージのセキュリティステータスをチェックし既知の脆弱性をリストアップする。
 
-出力サンプル:
+<details>
+<summary>出力サンプル:</summary>
 
 ```text
 # npm audit report
@@ -31,6 +32,8 @@ node_modules/@cypress/request
   Depends on vulnerable versions of @cypress/request
   node_modules/cypress
 ```
+
+</details>
 
 引数として `fix` か `signatures` を受け付ける。
 
@@ -78,7 +81,8 @@ npm completion >> ~/.zshrc
 
 インストール済みのパッケージの依存チェーンを出力する。
 
-出力サンプル:
+<details>
+<summary>出力サンプル:</summary>
 
 ```bash
 npm eplain axios
@@ -99,6 +103,8 @@ node_modules/wait-on/node_modules/axios
     node_modules/start-server-and-test
       dev start-server-and-test@"^2.0.0" from the root project
 ```
+
+</details>
 
 [公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-explain)
 
@@ -122,7 +128,8 @@ node_modules/wait-on/node_modules/axios
 
 引数なしの場合は `package.json` で指定されているパッケージだけを表示する:
 
-出力サンプル:
+<details>
+<summary>出力サンプル:</summary>
 
 ```bash
 npm ls
@@ -139,6 +146,8 @@ project@version /path/to/the/project/root/
 ...
 ```
 
+</details>
+
 `--all` オプションが指定された場合は依存先パッケージも含めてツリー構造（＝依存関係グラフ）で表示する:
 
 ```bash
@@ -153,7 +162,8 @@ npm ls --all --depth=2
 
 引数でパッケージが指定された場合は該当するパッケージに関連するものだけ表示する:
 
-出力サンプル:
+<details>
+<summary>出力サンプル:</summary>
 
 ```bash
 ❯ npm ls axios
@@ -167,6 +177,8 @@ myproject@1.0.0 /path/to/the/project/dir
   └─┬ wait-on@7.2.0
     └── axios@1.6.2
 ```
+
+</details>
 
 [公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-ls)
 
@@ -187,6 +199,18 @@ npm outdated --all
 ```
 
 [公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-outdated)
+
+### `npm repo`
+
+パッケージリポジトリページをブラウザで開く。
+
+[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-repo)
+
+サンプル:
+
+```bash
+npm repo axios
+```
 
 ### `npm run-script` / `npm run`
 
@@ -252,7 +276,8 @@ semver 制約を守りながらパッケージを更新する。
 
 パッケージに関する情報を出力する。
 
-出力サンプル:
+<details>
+<summary>出力サンプル:</summary>
 
 ```bash
 npm view axios
@@ -286,19 +311,9 @@ latest: 1.6.2        next: 1.2.0-alpha.1
 published a month ago by jasonsaayman <jasonsaayman@gmail.com>
 ```
 
+</details>
+
 [公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-view/)
-
-### `npm repo`
-
-パッケージリポジトリページをブラウザで開く。
-
-[公式ドキュメント](https://docs.npmjs.com/cli/v10/commands/npm-repo)
-
-サンプル:
-
-```bash
-npm repo axios
-```
 
 ## 逆引き
 
@@ -322,7 +337,8 @@ npm ls [パッケージ名]
 npm explain [パッケージ名]
 ```
 
-出力サンプル:
+<details>
+<summary>出力サンプル:</summary>
 
 ```bash
 npm ls axios
@@ -337,6 +353,8 @@ myproject@1.0.0 /path/to/the/project/dir
     └── axios@1.6.2
 ```
 
+</details>
+
 ### 特定のパッケージの依存先パッケージを調べたい
 
 ```bash
@@ -347,7 +365,8 @@ npm view [パッケージ名] dependencies
 npm view [パッケージ名] dependencies devDependencies
 ```
 
-出力サンプル:
+<details>
+<summary>出力サンプル:</summary>
 
 ```bash
 npm view axios
@@ -381,6 +400,11 @@ latest: 1.6.2        next: 1.2.0-alpha.1
 published a month ago by jasonsaayman <jasonsaayman@gmail.com>
 ```
 
+</details>
+
+<details>
+<summary>出力サンプル <code>dependencies</code> 付き:</summary>
+
 ```bash
 npm view axios dependencies
 ```
@@ -392,6 +416,8 @@ npm view axios dependencies
   'proxy-from-env': '^1.1.0'
 }
 ```
+
+</details>
 
 ### 依存ツリー（依存関係グラフ）をすべて表示したい
 
