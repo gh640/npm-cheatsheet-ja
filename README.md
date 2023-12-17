@@ -6,6 +6,31 @@
 
 - [CLI Commands | npm Docs](https://docs.npmjs.com/cli/v10/commands)
 
+## 目次
+
+- [最終確認時バージョン](#最終確認時バージョン)
+- [コマンド](#コマンド)
+  - [`npm audit`](#npm-audit)
+  - [`npm ci` / `npm clean-install`](npm-ci--npm-clean-install)
+  - [`npm completion`](#npm-completion)
+  - [`npm explain`](#npm-explain)
+  - [`npm ls` / `npm list`](#npm-ls--npm-list)
+  - [`npm outdated`](#npm-outdated)
+  - [`npm repo`](#npm-repo)
+  - [`npm run-script` / `npm run`](#npm-run-script--npm-run)
+  - [`npm start`](#npm-start)
+  - [`npm stop`](#npm-stop)
+  - [`npm test`](#npm-test)
+  - [`npm uninstall` / `npm un` / `npm remove` / `npm rm`](#npm-uninstall--npm-un--npm-remove--npm-rm)
+  - [`npm update` / `npm up`](#npm-update-npm-up)
+  - [`npm view`](#npm-view)
+- [逆引き](#逆引き)
+  - [更新可能なパッケージを調べたい](#更新可能なパッケージを調べたい)
+  - [特定のパッケージに依存しているパッケージを調べたい](#特定のパッケージに依存しているパッケージを調べたい)
+  - [特定のパッケージの依存先パッケージを調べたい](#特定のパッケージの依存先パッケージを調べたい)
+  - [依存ツリー（依存関係グラフ）をすべて表示したい](#依存ツリー（依存関係グラフ）をすべて表示したい)
+  - [パッケージの公式ページを開きたい](#パッケージの公式ページを開きたい)
+
 ## 最終確認時バージョン
 
 - `npm`: `10.2.4`
